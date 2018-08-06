@@ -22,8 +22,8 @@ public class AccountWalletTest {
 	public void testCreateAccountForName() {
 	Account ac = new Account();
 	ac.setMobileNo("1234567890");
-	ac.setName("simeon777");
-	ac.setEmail("simeon777@gmail.com");
+	ac.setName("Srija777");
+	ac.setEmail("Srija777@gmail.com");
 	ac.setBalance(500.0);
 	try {
 	service.createAccount(ac);
@@ -35,8 +35,8 @@ public class AccountWalletTest {
 	public void testCreateAccountForEmailId() {
 	Account account = new Account();
 	account.setMobileNo("1234567890");
-	account.setName("Simeon");
-	account.setEmail("simeon777@@gmail.com");
+	account.setName("Srija");
+	account.setEmail("Srija777@@gmail.com");
 	account.setBalance(500.0);
 	try {
 	service.createAccount(account);
@@ -49,7 +49,7 @@ public class AccountWalletTest {
 	Account ac = new Account();
 	ac.setMobileNo("7981123927");
 	ac.setName("");
-	ac.setEmail("simeon777@gmail.com");
+	ac.setEmail("Srija777@gmail.com");
 	ac.setBalance(500.0);
 	try {
 	service.createAccount(ac);
@@ -69,8 +69,8 @@ public class AccountWalletTest {
 	public void testCreateAccount() {
 	Account account = new Account();
 	account.setMobileNo("7981123927");
-	account.setName("Simeon");
-	account.setEmail("simeon777@gmail.com");
+	account.setName("Srija");
+	account.setEmail("Srija777@gmail.com");
 	account.setBalance(500.0);
 	}
 	@Test
@@ -79,7 +79,7 @@ public class AccountWalletTest {
 	account.setMobileNo("8309955996");
 	try {
 	service.showBalance(account.getMobileNo());
-	assertEquals("Simeon", account.getName());
+	assertEquals("Srija", account.getName());
 	} catch (AccountWalletException e) {
 	assertEquals("Exhausted Resultset",e.getMessage());
 	}
@@ -232,8 +232,8 @@ public class AccountWalletTest {
 	public void testCreateAccountForMobile() {
 	Account ac = new Account();
 	ac.setMobileNo("9573");
-	ac.setName("Simeon");
-	ac.setEmail("simeon@gmail.com");
+	ac.setName("Srija");
+	ac.setEmail("Srija@gmail.com");
 	ac.setBalance(200.0);
 	try {
 	service.createAccount(ac);
